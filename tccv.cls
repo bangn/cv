@@ -117,7 +117,7 @@
     \Mobilefone     & {#3}\smallskip\\
     \Letter      & \href{mailto:#4}{#4}\smallskip\\
     \PointingHand     & \href{#5}{#5}\smallskip\\
-    \Letter      & \href{#6}{#6}
+    \PointingHand      & \href{#6}{#6}
     \ifstrempty{#1}{}{\smallskip\\ \Lightning & \href{http://#1}{#1}}
     \end{tabularx}}}
 
