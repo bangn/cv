@@ -1,0 +1,234 @@
+% Wenneker Resume/CV
+% LaTeX Template
+% Version 1.1 (19/6/2016)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,12pt]{memoir} % Font and paper size
+
+\input{structure.tex} % Include the file specifying document layout and packages
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\userinformation{ % Set the content that goes into the sidebar of each page
+\begin{flushright}
+\small % Smaller font size
+Bang Nguyen\\ % Your name
+\Sep % Some whitespace
+\url{thebangnguyen@gmail.com} \\ % Your email address
+\url{github.com/bangn} \\ % Your URL
+\url{linkedin.com/in/bangtn} \\ % Your URL
+0422 375 093 \\ % Your phone number
+\Sep % Some whitespace
+\textbf{Address} \\
+306/63 Bank Lane \\ % Address 1
+Kogarah, NSW 2217 \\ % Address 2
+Australia \\ % Address 3
+\end{flushright}
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\userinformation % Print your information in the left column
+
+\framebreak % End of the first column
+
+%----------------------------------------------------------------------------------------
+%	HEADING
+%----------------------------------------------------------------------------------------
+
+\cvheading{Bang Nguyen} % Large heading - your name
+
+\cvsubheading{Software Engineer} % Subheading - your occupation/specialization
+
+%----------------------------------------------------------------------------------------
+%	ABOUT ME
+%----------------------------------------------------------------------------------------
+
+% \aboutme{About Me}{}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\CVSection{Education}
+
+%------------------------------------------------
+
+\CVItem{2010 - 2011, University of Technology, Sydney}{Master of Information Technology}
+
+%------------------------------------------------
+
+\CVItem{2003 - 2008, Ho Chi Minh City University of Technology, Vietnam}{Bachelor of Computer Science}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\CVSection{Software Development Skills}
+\CVItem{Advance}
+{
+	\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
+		\bluebullet Ruby/Rails & \bluebullet NodeJS & \bluebullet Typescript\\
+		\bluebullet React & \bluebullet Docker & \bluebullet Postgres\\
+	\end{tabular}
+}
+
+\CVItem{Intermediate}
+{
+	\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
+		\bluebullet AWS &  \bluebullet Kafka & \bluebullet ElasticSearch\\
+		\bluebullet RabbitMQ & \bluebullet Terraform\\
+	\end{tabular}
+}
+
+\CVItem{Beginner}
+{
+	\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
+	\bluebullet Haskell &  \bluebullet Elixir & \bluebullet CSS\\
+	\bluebullet Kubernetes & \bluebullet Ansible\\
+	\end{tabular}
+}
+
+\CVSection{Certificate}
+{
+	\begin{tabular}{p{0.5\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
+	\bluebullet AWS Solution Architect, Associate\\
+	\end{tabular}
+}
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\CVSection{Experience}
+
+\CVItem{Oct 2020 - present, \textit{Senior Software Engineer}, Shippit}{
+Involving in wide range of activities at Shippit
+\begin{itemize}
+	\item Break the Ruby on Rails core application into smaller microservices
+	\item Design/develop microservices from proof of concept to production using
+		Typescript and Kafka
+	\item Integrate carriers API to Shippit core application
+	\item Develop tools to empower support agent can do work by themselves
+	\item Mentor junior/internship Engineer
+    \item Technology used: Ruby/Ruby on Rails, Typescript, Postgres, Kubernetes, Kafka, Docker, AWS
+\end{itemize}
+}
+
+\CVItem{Oct 2017 - Oct 2020, \textit{Senior Software Engineer}, DiUS}{
+The projects I have worked on involve but not limit to belows
+\begin{itemize}
+    \item Develop highly available and fault tolerant system that can handle burst-able data being sent 24/7 using a TCP-based protocol (DICOM)
+	\begin{itemize}
+		\item Dockerize Orthanc server and deploy to AWS ECS with Auto scaling
+		\item Develop system to archive DICOM image to S3 and store its metadata
+			to ElasticSearch. In peak time, it can handle up to 5GB per minute
+		\item Develop UI to allow searching archived data and restore archived
+			image to specified location using AWS Step Functions
+	\end{itemize}
+\end{itemize}
+
+\clearpage % Start a new page
+
+\userinformation % Print your information in the left column
+
+\framebreak % End of the first column
+
+\begin{itemize}
+    \item Develop a chatbot to automate tasks which previously handled by human in call center
+	\begin{itemize}
+		\item Use Amazon Lex, AWS Lambda, AWS Cloudformation to develop a
+			chatbot which can redirect the customer to correct queue in call center.
+			It helps the business reduce the time it takes for a call center
+			agent to serve the customer.
+		\item Develop a chat interface using React and embed it into the client
+			website.
+	\end{itemize}
+    \item Develop an application to allow education agency to manage International Student
+	\begin{itemize}
+		\item Use React, NodeJS, Ruby to develop a web application to streamline
+			how education agency manage International Student health insurance.
+			It was used by education agencies such as IDP to create/purchase/renew
+			student's health insurance.
+	\end{itemize}
+    \item Technology used: React, NodeJS, Ruby, Redux, Postgres, ElasticSearch, Docker, AWS
+\end{itemize}
+}
+
+\CVItem{Sep 2015 - Oct 2017, \textit{Software Engineer}, Digivizer}{
+Develop social analytics platform
+\begin{itemize}
+    \item The platform downloads all customers engagements from their social
+    media account (Twitter, Facebook, Instagram) and provides analytics to allow
+    them to track their social engagements. Customers who used this platform
+    include but not limit to Microsoft, Lenovo, Deloitte.
+    \item Technology used: Ruby, Ruby on Rails, Sequel, React, Redux, Postgres, RabbitMQ,
+    Protobuf, ElasticSearch, Docker, AWS, Puppet
+\end{itemize}
+}
+
+\CVItem{Sep 2014 - Sep 2015, \textit{Software Engineer}, GetUp!}{
+Develop and maintain Tijuana Framework
+\begin{itemize}
+    \item Tijuana Framework is a home grown framework from GetUp! to allow
+		campaigners to contact its members via email to communicate on the up
+		coming campaign or event.
+    \item Technology used: Ruby, Rails, JQuery, MySQL, AWS
+\end{itemize}
+}
+
+\CVItem{Apr 2008 -- Apr 2014, \textit{Software Engineer/Technical Lead}, Vietnam}{
+Work on various projects across Embedded System and Mobile Applications as well
+as leading the development
+\begin{itemize}
+	\item Tech used: Java, C/C++, .NET, MSSQL
+\end{itemize}
+}
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\CVSection{Awards}
+
+%------------------------------------------------
+
+\CVItem{2004, \textit{Academic Achievement Award Scholarship}, Ho Chi
+Minh City University of Technology}{Awarded to the top performance
+student in the academic year of a Bachelors degree.}
+
+\CVItem{2002, Thang Long High School, Lam Dong Province,
+Vietnam}{Second Prize in Lam Dong Province Mathematics Competition}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+\end{document}
