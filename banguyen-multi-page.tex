@@ -64,24 +64,6 @@ Australia \\ % Address 3
 % \aboutme{About Me}{}
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-
-\CVSection{Education}
-
-%------------------------------------------------
-
-\CVItem{2010 - 2011, University of Technology, Sydney}{Master of Information Technology}
-
-%------------------------------------------------
-
-\CVItem{2003 - 2008, Ho Chi Minh City University of Technology, Vietnam}{Bachelor of Computer Science}
-
-%------------------------------------------------
-
-\Sep % Extra whitespace after the end of a major section
-
-%----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
 
@@ -98,14 +80,14 @@ Australia \\ % Address 3
 {
 	\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
 		\bluebullet AWS &  \bluebullet Kafka & \bluebullet ElasticSearch\\
-		\bluebullet Terraform\\
+		\bluebullet Terraform &  \bluebullet Kotlin \\
 	\end{tabular}
 }
 
 \CVItem{Beginner}
 {
 	\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
-	\bluebullet Haskell &  \bluebullet Elixir &  \bluebullet Kotlin
+	\bluebullet Haskell &  \bluebullet Elixir
 	\end{tabular}
 }
 
@@ -124,7 +106,20 @@ Australia \\ % Address 3
 
 \CVSection{Experience}
 
-\CVItem{Oct 2020 - Sep 2021, \textit{Senior Software Engineer}, Shippit}{
+\CVItem{Sept 2021 - March 2024 , \textit{Senior Software Engineer}, CashApp / Block
+(previously Square}{
+	CashApp is a financial applicationin the USA serving tens of millions of
+	monthly active user. I was part of the team to bring CashApp to other
+	countries or enhance it in existing market other than the USA. For
+	example: United Kingdom, Canada or Australia
+\begin{itemize}
+	\item Breakdown the Ruby on Rails core monolith application into smaller microservices
+	\item Technology used: Kotlin, Kafka, MySQL, DynamoDB, Kubernetes,
+		Terraform, Datadog
+\end{itemize}
+}
+
+\CVItem{Oct 2020 - Sept 2021, \textit{Senior Software Engineer}, Shippit}{
 	Shippit provides multi-carrier shipping platform for retailers to
 	simplify their deliveries.
 	I was involved in wide range of activities at Shippit
@@ -139,6 +134,12 @@ Australia \\ % Address 3
 \end{itemize}
 }
 
+\clearpage % Start a new page
+
+\userinformation % Print your information in the left column
+
+\framebreak % End of the first column
+
 \CVItem{Oct 2017 - Oct 2020, \textit{Senior Software Engineer}, DiUS}{
 The projects I worked on involved but are not limited to the below:
 \begin{itemize}
@@ -147,16 +148,11 @@ The projects I worked on involved but are not limited to the below:
 		\item Dockerize Orthanc server and deploy to AWS ECS with Auto scaling
 		\item Develop system to archive DICOM image to S3 and store its metadata
 			to ElasticSearch. In peak time, it can handle up to 5GB per minute
+
 		\item Develop UI to allow searching archived data and restore archived
 			image to specified location using AWS Step Functions
 	\end{itemize}
 \end{itemize}
-
-\clearpage % Start a new page
-
-\userinformation % Print your information in the left column
-
-\framebreak % End of the first column
 
 \begin{itemize}
     \item Develop a chatbot to automate tasks that were previously handled by
@@ -207,6 +203,12 @@ Develop and maintain Tijuana Framework
 \end{itemize}
 }
 
+\clearpage % Start a new page
+
+\userinformation % Print your information in the left column
+
+\framebreak % End of the first column
+
 \CVItem{Apr 2008 -- Apr 2014, \textit{Software Engineer/Technical Lead}, Vietnam}{
 Work on various projects across Embedded System and Mobile Applications as well
 as leading the development
@@ -216,5 +218,21 @@ as leading the development
 }
 
 \Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\CVSection{Education}
+
+%------------------------------------------------
+
+\CVItem{2010 - 2011, University of Technology, Sydney}{Master of Information Technology}
+
+%------------------------------------------------
+
+\CVItem{2003 - 2008, Ho Chi Minh City University of Technology, Vietnam}{Bachelor of Computer Science}
+
+%------------------------------------------------
 
 \end{document}
