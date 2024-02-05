@@ -1,0 +1,182 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 3.0 (December 17, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	%a4paper, % Uncomment for A4 paper size (default is US letter)
+	11pt, % Default font size, can use 10pt, 11pt or 12pt
+]{banguyen-medium-length} % Use the resume class
+
+\usepackage{ebgaramond} % Use the EB Garamond font
+
+%------------------------------------------------
+
+\name{Bang Nguyen} % Your name to appear at the top
+
+% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
+% Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
+
+\address{https://github.com/bangn} % Main address
+
+\address{https://www.linkedin.com/in/bangtn/} % A secondary address (optional)
+
+\address{0422~$\cdot$~375~$\cdot$~093 \\ thebangnguyen@gmail.com} % Contact information
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{rSection}{Software Development Skills}
+
+	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
+		Programming Languages & Ruby, JavaScript/TypeScript, Kotlin, Haskell \\
+		Frameworks & Ruby on Rails, ExpressJS, React \\
+		Databases & Postgres, MySQL, DynamoDB \\
+		Infrastructure and Tools & AWS, Docker, Lambda, Kubernetes, Terraform
+	\end{tabular}
+
+\end{rSection}
+
+\begin{rSection}{Certificate}
+
+	\begin{tabular}{@{} >{\bfseries}l @{\hspace{6ex}} l @{}}
+		AWS Solution Architect, Associate \\
+	\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+	\begin{rSubsection}{CashApp / Block (Previously known as Square)}{September
+		2022 - Present}{Senior Software Engineer}{Sydney, AU}
+
+	\item CashApp is a financial platform that offers various services through its app
+		for iOS and Android. It is catering to tens of millions of monthly active users
+		(approximately 56 million). I was a member of the team responsible for expanding
+		Cash App's presence beyond the USA, either by introducing it to new countries
+		such as Canada or Australia, or by enhancing its features in existing markets
+		(the United Kingdom).
+
+		I was leading the engineers team, collaborating closely with a cross-functional teams
+		(Product and Design) and various domain specific teams to
+		successfully deliver the United Kingdon (UK) code-red project.
+		This initiative enhances the Onboarding and Identity Verification process for
+		new UK customers and facilitates the re-verification of Identity
+		for existing UK customers
+
+		\item Leading a team of 5 server engineers and 2 client engineers
+		\item Collaborating closely with Product Manager, Product Designer, QA, Data Analysts, Customer Support, and
+			operations personnel to orchestrate the intricate series of changes, monitor and
+			evaluate success metrics
+		\item Facilitating effort to move functionality out of
+			CashApp's core monolith transitioning non-US Identity
+			Verification process to align with the US IDV
+			process and phasing out legacy implementations.
+		\item Taking ownership to lead and coordinate Incident responses and mitigate issues
+		\item Collaborating and pairing to uplift engineers domain knowledge
+		\item Technology used: Kotlin, Java, GRPC, Kafka, MySQL, DynamoDB, Kubernetes, Terraform, Datadog
+	\end{rSubsection}
+
+%------------------------------------------------
+
+	\begin{rSubsection}{Shippit}{October 2020 - September 2021}{Senior Software
+		Engineer}{Sydney, CA}
+		\item Shippit provides multi-carrier shipping platform for retailers to
+			simplify their deliveries.
+			I was involved in wide range of activities at Shippit
+		\item Breakdown the Ruby on Rails core monolith application into smaller microservices
+		\item Design/develop microservices from proof of concept to production using
+			Typescript and Kafka
+		\item Integrate carriers API to Shippit core application
+		\item Develop tools to empower support agents to resolve customer's request
+		\item Mentor junior/internship engineers
+		\item Technology used: Ruby/Ruby on Rails, Typescript, Postgres, Kubernetes, Kafka, Docker, AWS
+	\end{rSubsection}
+
+%------------------------------------------------
+
+	\begin{rSubsection}{DiUS}{October 2017 - October 2020}{Web Designer \&
+		Developer}{Sydney, AU}
+		\item Develop highly available and fault tolerant system that can handle burst-able data being sent 24/7 using a TCP-based protocol (DICOM)
+		\item Develop a chatbot to automate tasks that were previously handled by call center agents
+		\item Develop an application to allow the education agency to manage International Student
+		\item Technology used: React, NodeJS, ExpressJS, Ruby, Redux, Postgres, ElasticSearch, Docker, AWS
+	\end{rSubsection}
+
+	\begin{rSubsection}{Digivizer}{September 2015 - October 2017}{Software Engineer}{Sydney, AU}
+		\item Develop social analytics platform. The platform downloads all customers engagements from their social
+			media account (Twitter, Facebook, Instagram) and provides analytics to allow
+			them to track their social engagements. Customers who used this platform
+			include but are not limited to Microsoft, Lenovo, Deloitte.
+		\item Technology used: Ruby, Ruby on Rails, Sequel, React, Redux, Postgres, RabbitMQ,
+			Protobuf, ElasticSearch, Docker, AWS, Puppet
+	\end{rSubsection}
+
+	\begin{rSubsection}{GetUp!}{September 2014 - September 2015}{Software Engineer}{Sydney, AU}
+		\item Develop and maintain Tijuana Framework. Tijuana Framework is a home grown framework from GetUp! to allow
+			campaigners to contact its members via email to communicate on the up
+			coming campaign or event.
+		\item Technology used: Ruby, Rails, JQuery, MySQL, AWS
+	\end{rSubsection}
+
+	\begin{rSubsection}{Experience in Vietnam}{April 2008 - April 2014}{Software
+		Engineer/Technical Lead}{Ho Chi Minh City, Vietnam}
+
+		\item Work on various projects across Embedded System and Mobile Applications as well
+			as leading the development
+		\item Tech used: Java, C/C++, .NET, MSSQL
+	\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+	\textbf{University of Technology, Sydney} \hfill \textit{2010 - 2011} \\
+	Master in Information Technology
+
+	\textbf{Ho Chi Minh City University of Technology, Vietnam} \hfill \textit{2003 - 2008} \\
+	B.S. in Computer Science \& Engineering \\
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
